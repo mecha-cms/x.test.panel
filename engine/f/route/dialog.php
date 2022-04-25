@@ -2,21 +2,17 @@
 
 function dialog($_) {
     $_['title'] = 'Dialog';
-    $content = <<<HTML
-<p>
-  <button type="button" onclick="_.dialog.alert('Hey!').then(v =&gt; document.querySelector('output').value = v).catch(v =&gt; document.querySelector('output').value = v);">Alert</button>
-  <button type="button" onclick="_.dialog.confirm('Are you sure?').then(v =&gt; document.querySelector('output').value = v).catch(v =&gt; document.querySelector('output').value = v);">Confirm</button>
-  <button type="button" onclick="_.dialog.prompt('URL:', 'http://').then(v =&gt; document.querySelector('output').value = v).catch(v =&gt; document.querySelector('output').value = v);">Prompt</button>
-  <button type="button" onclick="_.dialog('&lt;p&gt;This is an example of dialog content using raw HTML string.&lt;/p&gt;&lt;p&gt;Press the &lt;kbd&gt;Escape&lt;/kbd&gt; key to exit!&lt;/p&gt;').then(v =&gt; document.querySelector('output').value = v).catch(v =&gt; document.querySelector('output').value = v);">Dialog</button>
-</p>
-<p><b>Output:</b></p>
-<pre><code><output>null</output></code></pre>
-HTML;
     $lot = [];
     $lot['tasks'] = [
         'lot' => [
             0 => [
-                '2' => ['onclick' => "return _.dialog('" . htmlspecialchars('<p>This is a sample dialog content with custom <abbr title="Hyper Text Markup Language">HTML</abbr> markup. You can insert anything here, for example, you can insert a container to load <abbr title="Hyper Text Markup Language">HTML</abbr> response from <abbr title="Asynchronous JavaScript And XML">AJAX</abbr>, etc.</p><p>Press <kbd>Escape</kbd> to cancel the dialog.</p>') . "').then(v => document.querySelector('output').value = v).catch(v => document.querySelector('output').value = v), false;"],
+                '2' => ['onclick' => "return _.dialog('" . strtr('<p>This is a sample dialog content with custom <abbr title="Hyper Text Markup Language">HTML</abbr> markup. You can insert anything here, for example, you can insert a container to load <abbr title="Hyper Text Markup Language">HTML</abbr> response from <abbr title="Asynchronous JavaScript And XML">AJAX</abbr>, etc.</p><p>Press <kbd>Escape</kbd> to cancel the dialog.</p>', [
+                    "'" => '\\x27',
+                    '"' => '\\x22',
+                    '&' => '\\x26',
+                    '<' => '\\x3c',
+                    '>' => '\\x3e'
+                ]) . "').then(v => document.querySelector('output').value = v).catch(v => document.querySelector('output').value = v), false;"],
                 'name' => false,
                 'stack' => 10,
                 'title' => 'Dialog (base)',
