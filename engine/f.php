@@ -4,7 +4,6 @@ require __DIR__ . D . 'f' . D . 'route.php';
 
 require __DIR__ . D . 'f' . D . 'route' . D . 'alert.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'bar.php';
-require __DIR__ . D . 'f' . D . 'route' . D . 'cards.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'content.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'description.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'dialog.php';
