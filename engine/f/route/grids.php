@@ -14,7 +14,7 @@ function grids($_) {
 CSS;
     $_['title'] = 'Rows and Columns';
     $_['asset']['preview'] = [
-        'path' => 'data:text/css;base64,' . base64_encode($style),
+        'link' => 'data:text/css;base64,' . base64_encode($style),
         'stack' => 10
     ];
     $lot = [];

@@ -63,6 +63,7 @@ function bar($_) {
                                 ],
                                 'stack' => 20,
                                 'title' => 'Menu 3.2',
+                                'description' => 'Description for menu 3.2.',
                                 'url' => '/'
                             ],
                             'menu-2-2' => [
