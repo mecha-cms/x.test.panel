@@ -2,7 +2,7 @@
 
 function pages($_) {
     $_['title'] = 'Pages';
-    $item = static function($title = null, $description = null, $type = 'page', $stack = 10) {
+    $item = static function ($title = null, $description = null, $type = 'page', $stack = 10) {
         return [
             'description' => $description,
             'tasks' => [

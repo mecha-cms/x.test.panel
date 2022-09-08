@@ -14,7 +14,7 @@ function pager($_) {
         'chunk' => 10,
         'count' => 1000,
         'current' => $_GET['page'] ?? 1,
-        'ref' => static function($index) use($_) {
+        'ref' => static function ($index) use ($_) {
             return \x\panel\to\link(['query' => ['page' => 1 === $index ? null : $index]]);
         },
         'stack' => 20,

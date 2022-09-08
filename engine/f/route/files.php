@@ -2,7 +2,7 @@
 
 function files($_) {
     $_['title'] = 'Files';
-    $item = static function($title = null, $description = null, $type = 'file', $stack = 10) {
+    $item = static function ($title = null, $description = null, $type = 'file', $stack = 10) {
         return [
             'description' => $description,
             'tasks' => [

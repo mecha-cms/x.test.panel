@@ -1,6 +1,6 @@
 <?php
 
-Hook::set('_', function($_) {
+Hook::set('_', function ($_) {
     extract($GLOBALS, EXTR_SKIP);
     // Add menu that links to the test(s) page
     $_['lot']['bar']['lot'][1]['lot']['test'] = [
@@ -15,11 +15,11 @@ Hook::set('_', function($_) {
             'task' => 'get'
         ]
     ];
-    $tests = is(get_defined_functions(true)['user'], static function($v) {
+    $tests = is(get_defined_functions(true)['user'], static function ($v) {
         return 0 === strpos($v, "x\\panel\\route\\__test\\");
     });
     foreach ($tests as $k => $test) {
-        $path = implode('/', map(explode("\\", substr($test, 14)), static function($v) {
+        $path = implode('/', map(explode("\\", substr($test, 14)), static function ($v) {
             return strtr(p2f($v), ['__' => '.']);
         }));
         $_['lot']['bar']['lot'][1]['lot']['test']['lot'][] = [
