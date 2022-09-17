@@ -24,23 +24,19 @@ function fields($_) {
             ],
             'buttons' => [
                 'lot' => [
-                    1 => [
-                        'title' => 'Button 1',
-                        'value' => 1
-                    ],
-                    2 => [
-                        'title' => 'Button 2',
-                        'value' => 2
-                    ],
+                    0 => ['title' => 'Button 1'],
+                    1 => ['title' => 'Button 2'],
+                    2 => ['title' => 'Button 3'],
                     3 => [
                         'active' => false,
-                        'title' => 'Button 3',
-                        'value' => 3
+                        'title' => 'Button 4',
+                        'value' => 'four'
                     ]
                 ],
                 'name' => 'default[buttons]',
                 'title' => 'Buttons',
-                'type' => 'buttons'
+                'type' => 'buttons',
+                'values' => [1, 2, 3]
             ],
             'color' => [
                 'title' => 'Color',
@@ -48,10 +44,9 @@ function fields($_) {
                 'value' => '#f00'
             ],
             'colors' => [
-                'lot' => ['#f00', '#0f0', '#00f'],
-                'sort' => false,
                 'title' => 'Colors',
-                'type' => 'colors'
+                'type' => 'colors',
+                'values' => ['#f00', '#0f0', '#00f']
             ],
             'content' => [
                 'name' => 'default[content]',
