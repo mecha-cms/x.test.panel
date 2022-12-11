@@ -323,6 +323,12 @@ function fields($_) {
                 'name' => 'default[u-r-l]',
                 'title' => 'URL',
                 'type' => 'u-r-l'
+            ],
+            'output' => [
+                'content' => '<output class="is:host">12345</output>',
+                'name' => 'default[output]',
+                'title' => 'Output',
+                'type' => 'field'
             ]
         ],
         'title' => 'Title Goes Here',
