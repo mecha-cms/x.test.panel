@@ -89,7 +89,7 @@ function stacks($_) {
                 'type' => 'stacks'
             ]
         ],
-        'size' => '4/6',
+        'size' => 8 / 12,
         'stack' => 10
     ];
     $lot['rows']['lot'][0]['lot'][1] = [
@@ -123,7 +123,7 @@ function stacks($_) {
                 'type' => 'stacks'
             ]
         ],
-        'size' => '2/6',
+        'size' => 4 / 12,
         'stack' => 20
     ];
     $_['lot']['desk']['lot']['form']['lot'][1]['lot'] = $lot;
