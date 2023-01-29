@@ -278,23 +278,23 @@ function fields($_) {
                 'type' => 'text'
             ],
             'text-with-before' => [
-                'gist' => 'http://',
                 'name' => 'default[text-with-before]',
                 'title' => 'Text',
-                'type' => 'text'
+                'type' => 'text',
+                'unit' => ['http://', null]
             ],
             'text-with-after' => [
-                'gist' => ["", '.html'],
                 'name' => 'default[text-with-after]',
                 'title' => 'Text',
-                'type' => 'text'
+                'type' => 'text',
+                'unit' => [null, '.html']
             ],
             'text-with-before-after' => [
-                'gist' => ["", 'text'], // Text on the right
-                'icon' => ['M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z', ""], // Icon on the left
+                'icon' => ['M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z', null], // Icon on the left
                 'name' => 'default[text-with-before-after]',
                 'title' => 'Text',
                 'type' => 'text',
+                'unit' => [null, 'text'] // Text on the right
             ],
             'text-with-lot' => [
                 'hint' => 'Select color&hellip;',
