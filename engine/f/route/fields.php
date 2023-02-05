@@ -249,6 +249,11 @@ function fields($_) {
                 'title' => 'Range',
                 'type' => 'range'
             ],
+            'route' => [
+                'name' => 'default[route]',
+                'title' => 'Route',
+                'type' => 'route'
+            ],
             'set' => [
                 'content' => '<p>Lorem ipsum dolor sit amet.</p>',
                 'description' => 'Example field set.',
