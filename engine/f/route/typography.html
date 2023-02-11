@@ -129,36 +129,36 @@
 <form>
   <fieldset>
     <legend>Test Legend</legend>
-    <p>text <button>Button</button> <input type="button" value="Input Button"> <span role="button">Span</span> <a href="#" role="button">Anchor</a> text</p>
-    <p>text <input type="text"></p>
-    <p>text <select>
+    <p>text <button class="is:host">Button</button> <input class="is:host" type="button" value="Input Button"> <span class="is:host" role="button">Span</span> <a class="is:host" href="#" role="button">Anchor</a> text</p>
+    <p>text <input class="is:host" type="text"></p>
+    <p>text <select class="is:host">
       <option>Red</option>
       <option>Green</option>
       <option>Blue</option>
     </select> text</p>
-    <p>text <input type="color"> text</p>
-    <p>text <label><input type="checkbox"> <span>Check Box</span></label> text</p>
-    <p>text <label><input role="switch" type="checkbox"> <span>Check Box</span></label> text</p>
-    <p>text <label><input type="radio"> <span>Radio</span></label></p>
-    <p>text <input type="range"> text</p>
-    <p>text <textarea></textarea> text</p>
-    <p>text <input type="file"> text</p>
-    <p><textarea class="has:width">Lorem ipsum dolor sit amet.</textarea></p>
-    <p><textarea class="has:height has:width" placeholder="Placeholder goes here&hellip;"></textarea></p>
+    <p>text <input class="is:host" type="color"> text</p>
+    <p>text <label><input class="is:host" type="checkbox"> <span>Check Box</span></label> text</p>
+    <p>text <label><input class="is:host" role="switch" type="checkbox"> <span>Check Box</span></label> text</p>
+    <p>text <label><input class="is:host" type="radio"> <span>Radio</span></label></p>
+    <p>text <input class="is:host" type="range"> text</p>
+    <p>text <textarea class="is:host"></textarea> text</p>
+    <p>text <input class="is:host" type="file"> text</p>
+    <p><textarea class="has:width is:host">Lorem ipsum dolor sit amet.</textarea></p>
+    <p><textarea class="has:height has:width is:host" placeholder="Placeholder goes here&hellip;"></textarea></p>
   </fieldset>
 </form>
 
 <form>
   <fieldset>
     <legend>Test Legend</legend>
-    <p>text <button disabled>Button</button></p>
-    <p>text <input disabled type="text"></p>
-    <p>text <select disabled>
+    <p>text <button class="is:host" disabled>Button</button></p>
+    <p>text <input class="is:host" disabled type="text"></p>
+    <p>text <select class="is:host" disabled>
       <option>Red</option>
       <option>Green</option>
       <option>Blue</option>
     </select></p>
-    <p>text <textarea disabled></textarea></p>
+    <p>text <textarea class="is:host" disabled></textarea></p>
   </fieldset>
 </form>
 

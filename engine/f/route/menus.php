@@ -1,6 +1,6 @@
 <?php namespace x\panel\route\__test;
 
-function menu($_) {
+function menus($_) {
     $_['title'] = 'Menus';
     $lot = [];
     $lot['menu-0'] = [
@@ -26,6 +26,35 @@ function menu($_) {
                         'url' => '/'
                     ],
                     2 => [
+                        'lot' => [
+                            0 => [
+                                'stack' => 10,
+                                'title' => 'Menu 2.3.1',
+                                'url' => '/'
+                            ],
+                            1 => [
+                                'lot' => [
+                                    0 => [
+                                        'stack' => 10,
+                                        'title' => 'Menu 2.3.1.1',
+                                        'url' => '/'
+                                    ],
+                                    1 => [
+                                        'stack' => 20,
+                                        'title' => 'Menu 2.3.1.2',
+                                        'url' => '/'
+                                    ]
+                                ],
+                                'stack' => 20,
+                                'title' => 'Menu 2.3.2',
+                                'url' => '/'
+                            ],
+                            2 => [
+                                'stack' => 30,
+                                'title' => 'Menu 2.3.3',
+                                'url' => '/'
+                            ]
+                        ],
                         'stack' => 30,
                         'title' => 'Menu 2.3',
                         'url' => '/'
@@ -39,6 +68,23 @@ function menu($_) {
                 'description' => 'Description for Menu 3.',
                 'lot' => [
                     0 => [
+                        'lot' => [
+                            0 => [
+                                'stack' => 10,
+                                'title' => 'Menu 3.1.1',
+                                'url' => '/'
+                            ],
+                            1 => [
+                                'stack' => 20,
+                                'title' => 'Menu 3.1.2',
+                                'url' => '/'
+                            ],
+                            2 => [
+                                'stack' => 30,
+                                'title' => 'Menu 3.1.3',
+                                'url' => '/'
+                            ]
+                        ],
                         'stack' => 10,
                         'title' => 'Menu 3.1',
                         'url' => '/'
@@ -103,11 +149,56 @@ function menu($_) {
             ],
         ],
         'title' => 'Menu Title',
-        'type' => 'menu'
+        'type' => 'menus'
     ];
     $lot['menu-1'] = [
         'lot' => ['Foo', 'Bar', 'Baz'],
-        'type'=> 'menu'
+        'type'=> 'menus'
+    ];
+    $lot['menu-2'] = [
+        'lot' => [
+            0 => [
+                'stack' => 10,
+                'title' => 'Foo',
+                'url' => '/'
+            ],
+            '1.5' => [
+                'stack' => 15,
+                'type' => 'separator'
+            ],
+            1 => [
+                'stack' => 20,
+                'title' => 'Bar',
+                'url' => '/'
+            ],
+            2 => [
+                'lot' => [
+                    0 => [
+                        'stack' => 10,
+                        'title' => 'Baz 1',
+                        'url' => '/'
+                    ],
+                    '1.5' => [
+                        'stack' => 15,
+                        'type' => 'separator'
+                    ],
+                    1 => [
+                        'stack' => 20,
+                        'title' => 'Baz 2',
+                        'url' => '/'
+                    ],
+                    2 => [
+                        'stack' => 30,
+                        'title' => 'Baz 3',
+                        'url' => '/'
+                    ]
+                ],
+                'stack' => 30,
+                'title' => 'Baz',
+                'url' => '/'
+            ]
+        ],
+        'type'=> 'menus'
     ];
     $_['lot']['desk']['lot']['form']['lot'][1]['lot'] = $lot;
     return $_;
