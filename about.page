@@ -6,9 +6,6 @@ color: '#792cae'
 author: Taufik Nurrohman
 type: Markdown
 version: 1.0.0
-
-use:
-  '.\lot\x\panel': 1
 ...
 
 Delete this extension or set `TEST` mode to `false` to remove the test menu.
