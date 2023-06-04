@@ -28,7 +28,8 @@ function alert($_) {
                 'title' => false,
                 'url' => '/'
             ]
-        ]
+        ],
+        'tags' => ['p' => false]
     ], 0);
     $_['alert']['info'][] = '<span role="group">' . $title . ' ' . $tasks . '</span>';
     return $_;

@@ -13,10 +13,8 @@ function pager($_) {
     $lot['pager-2'] = [
         'chunk' => 10,
         'count' => 1000,
-        'current' => $_GET['page'] ?? 1,
-        'ref' => static function ($index) use ($_) {
-            return \x\panel\to\link(['query' => ['page' => 1 === $index ? null : $index]]);
-        },
+        'current' => $current = $_GET['page'] ?? 1,
+        'route' => '?page=%d',
         'stack' => 20,
         'type' => 'pager'
     ];
