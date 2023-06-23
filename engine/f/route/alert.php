@@ -7,11 +7,11 @@ function alert($_) {
     $_['alert']['success'][] = 'This is a success message.';
     $_['alert']['success'][] = 'This is another success message.';
     $_['alert']['custom'][] = 'This is a custom message.';
-    $title = \x\panel\type\title([
+    $title = \x\panel\lot\type\title([
         'content' => 'A new version is available!',
         'level' => -1
     ], 0);
-    $tasks = \x\panel\type\tasks\link([
+    $tasks = \x\panel\lot\type\tasks\link([
         '0' => 'span',
         'lot' => [
             'pull' => [
