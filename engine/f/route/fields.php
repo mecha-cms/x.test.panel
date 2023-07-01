@@ -318,19 +318,13 @@ function fields($_) {
                 'title' => 'Title',
                 'type' => 'title'
             ],
-            'toggle' => [
-                'hint' => 'Toggle hint.',
-                'name' => 'default[toggle]',
-                'title' => 'Toggle',
-                'type' => 'toggle'
-            ],
             'u-r-l' => [
                 'name' => 'default[u-r-l]',
                 'title' => 'URL',
                 'type' => 'u-r-l'
             ],
             'output' => [
-                'content' => '<output class="is:host">12345</output>',
+                'content' => '<output class="output">12345</output>',
                 'name' => 'default[output]',
                 'title' => 'Output',
                 'type' => 'field'
