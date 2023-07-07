@@ -3,6 +3,7 @@
 function __test($_) {
     $_['status'] = 200;
     $_['title'] = 'Tests';
+    $_['type'] = 'blank';
     // `http://127.0.0.1/panel/get/.test/*`
     if ('.test' !== $_['path']) {
         return $_;
