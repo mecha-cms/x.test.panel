@@ -111,9 +111,27 @@ function menus($_) {
                 ]
             ],
             4 => [
+                'lot' => [
+                    0 => [
+                        'stack' => 10,
+                        'title' => 'Menu 4.1',
+                        'url' => '/'
+                    ],
+                    1 => [
+                        'stack' => 20,
+                        'title' => 'Menu 4.2',
+                        'url' => '/'
+                    ],
+                    2 => [
+                        'stack' => 30,
+                        'title' => 'Menu 4.3',
+                        'url' => '/'
+                    ],
+                ],
                 'stack' => 30,
                 'title' => 'Menu 4',
-                'url' => '/'
+                'url' => '/',
+                'width' => 250
             ],
             '4.5' => [
                 'stack' => 30.5,
