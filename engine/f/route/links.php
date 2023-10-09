@@ -1,18 +1,18 @@
 <?php namespace x\panel\route\__test;
 
-function menus($_) {
-    $_['title'] = 'Menus';
+function links($_) {
+    $_['title'] = 'Links';
     $lot = [];
-    $lot['menus-0'] = [
-        'description' => 'Menus description.',
+    $lot['links-0'] = [
+        'description' => 'Links description.',
         'lot' => [
             0 => [
                 'stack' => 10,
-                'title' => 'Menu 1',
+                'title' => 'Link 1',
                 'url' => '/'
             ],
             1 => [
-                'description' => 'Description for Menu 2.',
+                'description' => 'Description for Link 2.',
                 'lot' => [
                     0 => [
                         'stack' => 10,
@@ -61,11 +61,11 @@ function menus($_) {
                     ]
                 ],
                 'stack' => 20,
-                'title' => 'Menu 2',
+                'title' => 'Link 2',
                 'url' => '/'
             ],
             3 => [
-                'description' => 'Description for Menu 3.',
+                'description' => 'Description for Link 3.',
                 'lot' => [
                     0 => [
                         'lot' => [
@@ -102,7 +102,7 @@ function menus($_) {
                     ]
                 ],
                 'stack' => 20,
-                'title' => 'Menu 3',
+                'title' => 'Link 3',
                 'url' => '/',
                 // Enable description and title in sub-menu
                 'with' => [
@@ -129,7 +129,7 @@ function menus($_) {
                     ],
                 ],
                 'stack' => 30,
-                'title' => 'Menu 4',
+                'title' => 'Link 4',
                 'url' => '/',
                 'width' => 250
             ],
@@ -140,21 +140,21 @@ function menus($_) {
             5 => [
                 'description' => 'Default.',
                 'stack' => 40,
-                'title' => 'Menu 5',
+                'title' => 'Link 5',
                 'url' => '/'
             ],
             6 => [
                 'current' => true,
                 'description' => 'Current.',
                 'stack' => 40.1,
-                'title' => 'Menu 6',
+                'title' => 'Link 6',
                 'url' => '/'
             ],
             7 => [
                 'active' => false,
                 'description' => 'Disabled.',
                 'stack' => 40.2,
-                'title' => 'Menu 7',
+                'title' => 'Link 7',
                 'url' => '/'
             ],
             8 => [
@@ -162,18 +162,18 @@ function menus($_) {
                 'current' => true,
                 'description' => 'Current, disabled.',
                 'stack' => 40.3,
-                'title' => 'Menu 8',
+                'title' => 'Link 8',
                 'url' => '/'
             ],
         ],
-        'title' => 'Menus Title',
-        'type' => 'menus'
+        'title' => 'Links Title',
+        'type' => 'links'
     ];
-    $lot['menus-1'] = [
+    $lot['links-1'] = [
         'lot' => ['Foo', 'Bar', 'Baz'],
-        'type'=> 'menus'
+        'type'=> 'links'
     ];
-    $lot['menus-2'] = [
+    $lot['links-2'] = [
         'lot' => [
             0 => [
                 'stack' => 10,
@@ -216,7 +216,7 @@ function menus($_) {
                 'url' => '/'
             ]
         ],
-        'type'=> 'menus'
+        'type'=> 'links'
     ];
     $_['lot']['desk']['lot']['form']['lot'][1]['lot'] = $lot;
     return $_;
