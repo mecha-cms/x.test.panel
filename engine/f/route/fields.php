@@ -327,7 +327,7 @@ function fields($_) {
                 'content' => '<output class="output">12345</output>',
                 'name' => 'default[output]',
                 'title' => 'Output',
-                'type' => 'field'
+                'type' => 'blank'
             ]
         ],
         'title' => 'Title Goes Here',
