@@ -5,15 +5,12 @@ function alert($_) {
     $_['alert']['error'][] = 'This is an error message.';
     $_['alert']['info'][] = 'This is an info message.';
     $_['alert']['success'][] = 'This is a success message.';
-    $_['alert']['success'][] = 'This is another success message.';
+    $_['alert']['success'][] = ['This is another %s message.', 'success'];
     $_['alert']['custom'][] = 'This is a custom message.';
-    $title = \x\panel\lot\type\title([
-        'content' => 'A new version is available!',
-        'level' => -1
-    ], 0);
-    $tasks = \x\panel\lot\type\tasks\link([
-        '0' => 'span',
-        'lot' => [
+    $_['alert']['info'][] = [
+        'description' => 'A new version is available!',
+        'stack' => 10,
+        'tasks' => [
             'pull' => [
                 'description' => 'Download',
                 'icon' => 'M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z',
@@ -28,9 +25,7 @@ function alert($_) {
                 'title' => false,
                 'url' => '/'
             ]
-        ],
-        'tags' => ['p' => false]
-    ], 0);
-    $_['alert']['info'][] = '<span role="group">' . $title . ' ' . $tasks . '</span>';
+        ]
+    ];
     return $_;
 }
