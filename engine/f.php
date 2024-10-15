@@ -18,6 +18,7 @@ require __DIR__ . D . 'f' . D . 'route' . D . 'pager.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'pages.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'section.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'separator.php';
+require __DIR__ . D . 'f' . D . 'route' . D . 'sortable.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'stacks.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'tabs.php';
 require __DIR__ . D . 'f' . D . 'route' . D . 'tasks.php';
